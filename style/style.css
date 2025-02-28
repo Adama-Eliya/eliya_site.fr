@@ -109,6 +109,30 @@ section {
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.skills-list li {
+  display: inline-block;
+  background: #007BFF;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#ambitions p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+#passions p {
+  font-size: 16px;
+  text-align: center;
 }
 
 /* 📝 Blog */
@@ -142,6 +166,7 @@ footer {
 }
 
 .video-container {
+  width: 100%;
   display: flex;
   background: linear-gradient(90deg, #007BFF, #00C6FF);
   justify-content: center;
@@ -153,4 +178,66 @@ video {
   max-width: 700px;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media  screen and (max-width:768px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav ul li {
+    margin : 5px 0px;
+  }
+    /* 📌 Sections */
+  section{
+    padding: 20px;
+    width: 90%;
+  }
+  .video-container video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form {
+    width: 100%;
+    padding: 0px;
+  }
+  input, textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+   #about, #toggle-mode,#contact {
+    font-size: 13px;
+  }
+  button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+      font-size: 22px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+  #about, #toggle-mode,#contact {
+    font-size: 11px;
+  }
+  /* 🌟 Réduction des marges */
+  section , header{
+      padding: 15px;
+  }
+
+ 
+  /* 📧 Bouton de Contact */
+  button {
+      font-size: 14px;
+      padding: 8px;
+  }
 }

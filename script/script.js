@@ -13,3 +13,15 @@ const darkMode = function(){
     });
 }
 togg.addEventListener('click',darkMode);
+
+
+document.querySelectorAll(".skills-list li").forEach(skill => {
+    skill.addEventListener("mouseover", () => {
+        skill.style.transform = "scale(1.1)";
+        skill.style.transition = "0.3s";
+    });
+
+    skill.addEventListener("mouseleave", () => {
+        skill.style.transform = "scale(1)";
+    });
+});
