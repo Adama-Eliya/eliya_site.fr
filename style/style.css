@@ -234,10 +234,15 @@ video {
       padding: 15px;
   }
 
- 
   /* 📧 Bouton de Contact */
   button {
       font-size: 14px;
       padding: 8px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #about, #toggle-mode,#contact {
+    font-size: 9px;
   }
 }
