@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Teiclab</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_contact.css">
+    <script src="script/script_doc.js" defer></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    emailjs.init("cOdtCffITwk_qz-F1"); // Remplace "YOUR_USER_ID" par ton ID EmailJS
+</script>
+
+<body>
+    <header>
+        <h1>📩 Me Contacter</h1>
+        <p>Envoyez-moi un message et je vous répondrai rapidement.</p>
+        <a href="index.html" class="back-button">⬅ Retour</a>
+    </header>
+
+    <section id="contact-form">
+        <h2>📧 Formulaire de contact</h2>
+        <form id="message-form">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">📨 Envoyer</button>
+        </form>
+        <p id="response-message"></p>
+
+    </section>
+
+
+    <footer>
+        <p>© 2024 AVLAH Adama Eliya - Teiclab ID. Tous droits réservés.</p>
+    </footer>
+    
+</body>
+</html>
