@@ -246,3 +246,19 @@ video {
     font-size: 9px;
   }
 }
+
+#mute-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#mute-toggle:hover {
+  background: #0056b3;
+}

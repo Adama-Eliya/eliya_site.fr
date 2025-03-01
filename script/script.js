@@ -25,3 +25,22 @@ document.querySelectorAll(".skills-list li").forEach(skill => {
         skill.style.transform = "scale(1)";
     });
 });
+
+// 🎵 Contrôle de la musique
+document.addEventListener("DOMContentLoaded", function () {
+    let audio = document.getElementById("background-music");
+    let muteButton = document.getElementById("mute-toggle");
+
+    // Désactiver le son par défaut (autoplay est souvent bloqué)
+    audio.muted = true;
+
+    muteButton.addEventListener("click", function () {
+        if (audio.muted) {
+            audio.muted = false;
+            muteButton.textContent = "🔊 Désactiver";
+        } else {
+            audio.muted = true;
+            muteButton.textContent = "🔇 Activer";
+        }
+    });
+});
